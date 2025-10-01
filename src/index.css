@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Spanish/Barcelona inspired color palette */
+    --background: 35 25% 97%;
+    --foreground: 15 25% 15%;
+
+    --card: 35 35% 98%;
+    --card-foreground: 15 25% 15%;
+
+    --popover: 35 35% 98%;
+    --popover-foreground: 15 25% 15%;
+
+    /* Spanish sunset primary - warm terracotta */
+    --primary: 15 85% 55%;
+    --primary-foreground: 35 25% 97%;
+
+    /* Mediterranean secondary - warm blue */
+    --secondary: 215 75% 25%;
+    --secondary-foreground: 35 25% 97%;
+
+    /* Warm muted tones */
+    --muted: 25 20% 92%;
+    --muted-foreground: 15 15% 45%;
+
+    /* Golden accent */
+    --accent: 45 95% 60%;
+    --accent-foreground: 15 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 25% 97%;
+
+    --border: 25 20% 88%;
+    --input: 25 20% 88%;
+    --ring: 15 85% 55%;
+
+    /* Custom Spanish theme colors */
+    --spanish-red: 0 85% 60%;
+    --spanish-gold: 45 95% 60%;
+    --barcelona-blue: 215 90% 35%;
+    --terracotta: 15 85% 55%;
+    --warm-sand: 35 45% 85%;
+    
+    /* Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(15 85% 55%), hsl(45 95% 60%));
+    --gradient-mediterranean: linear-gradient(135deg, hsl(215 75% 25%), hsl(215 90% 35%));
+    --gradient-spanish: linear-gradient(135deg, hsl(0 85% 60%), hsl(45 95% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(15 85% 55%) 0%, hsl(215 75% 25%) 50%, hsl(45 95% 60%) 100%);
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(15 85% 55% / 0.3);
+    --shadow-mediterranean: 0 10px 30px -10px hsl(215 75% 25% / 0.3);
+    --shadow-gold: 0 10px 30px -10px hsl(45 95% 60% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Spanish theme */
+    --background: 15 25% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 15 25% 10%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 15 25% 10%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 15 85% 65%;
+    --primary-foreground: 15 25% 8%;
+
+    --secondary: 215 75% 35%;
+    --secondary-foreground: 35 25% 95%;
+
+    --muted: 15 20% 18%;
+    --muted-foreground: 15 15% 65%;
+
+    --accent: 45 95% 70%;
+    --accent-foreground: 15 25% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 25% 95%;
+
+    --border: 15 20% 18%;
+    --input: 15 20% 18%;
+    --ring: 15 85% 65%;
+
+    /* Dark theme gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(15 85% 45%), hsl(45 95% 50%));
+    --gradient-mediterranean: linear-gradient(135deg, hsl(215 75% 20%), hsl(215 90% 30%));
+    --gradient-hero: linear-gradient(135deg, hsl(15 85% 45%) 0%, hsl(215 75% 20%) 50%, hsl(45 95% 50%) 100%);
+    
+    --shadow-warm: 0 10px 30px -10px hsl(15 85% 45% / 0.4);
+    --shadow-mediterranean: 0 10px 30px -10px hsl(215 75% 20% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
