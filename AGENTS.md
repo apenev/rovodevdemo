@@ -320,6 +320,7 @@ export const Component = ({ className, ...props }: ComponentProps) => {
 
 - if asked about a Jira ticket with T25EU issue key then use the site https://one-atlas-dvao.atlassian.net/jira/software/projects/T25EU/boards/211
 - if asked about a Jira ticket with T2ET issue key then use the site https://one-atlas-dvao.atlassian.net/jira/software/projects/T2ET/boards/244
+- if asked about a Jira ticket withROVODEVDEM  issue key then use the site https://bytesource.atlassian.net/jira/software/c/projects/ROVODEVDEM/boards/284
 
 ## Jira write operations
 
