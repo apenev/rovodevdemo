@@ -33,3 +33,5 @@ A Rovo Dev CLI demo website for Atlassian's Team 25 Europe WCSD Hands-on worksho
 ## 📄 License
 
 This project is for Atlassian Team 25 Europe WCSD Hands-on workshop purposes.
+
+# *******************
